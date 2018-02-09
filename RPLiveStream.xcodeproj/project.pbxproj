@@ -13,9 +13,59 @@
 		91BE26DA202C35F700123DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91BE26D9202C35F700123DF3 /* Assets.xcassets */; };
 		91BE26DD202C35F700123DF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BE26DB202C35F700123DF3 /* LaunchScreen.storyboard */; };
 		91BE26E0202C35F700123DF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BE26DF202C35F700123DF3 /* main.m */; };
+		91BE26E7202C3CD200123DF3 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE26E6202C3CD100123DF3 /* ReplayKit.framework */; };
+		91BE26ED202C3FDA00123DF3 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE26E6202C3CD100123DF3 /* ReplayKit.framework */; };
+		91BE26EF202C3FDA00123DF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE26EE202C3FDA00123DF3 /* UIKit.framework */; };
+		91BE26F3202C3FDA00123DF3 /* BroadcastSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BE26F2202C3FDA00123DF3 /* BroadcastSetupViewController.m */; };
+		91BE26F7202C3FDA00123DF3 /* ExtUploadUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 91BE26EC202C3FDA00123DF3 /* ExtUploadUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		91BE26FD202C410400123DF3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BE26FC202C410400123DF3 /* MainInterface.storyboard */; };
+		91BE2703202C430700123DF3 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE26E6202C3CD100123DF3 /* ReplayKit.framework */; };
+		91BE2707202C430700123DF3 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BE2706202C430700123DF3 /* SampleHandler.m */; };
+		91BE270B202C430700123DF3 /* ExtUpload.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 91BE2702202C430700123DF3 /* ExtUpload.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		91BE278F202D4DE300123DF3 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE278E202D4DE300123DF3 /* libstdc++.tbd */; };
+		91BE2791202D4DE900123DF3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE2790202D4DE900123DF3 /* libsqlite3.tbd */; };
+		91BE2793202D4DFF00123DF3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE2792202D4DFF00123DF3 /* libz.tbd */; };
+		91BE2795202D4E1000123DF3 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE2794202D4E1000123DF3 /* libresolv.tbd */; };
+		91BE2797202D4E2400123DF3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE2796202D4E2400123DF3 /* Accelerate.framework */; };
+		91BE279C202D81AB00123DF3 /* PAirSandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BE279B202D81AB00123DF3 /* PAirSandbox.m */; };
+		D765C140A04E270B41EF6AA7 /* libPods-ExtUpload.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A21C62E66B87F1DBA4A1A1 /* libPods-ExtUpload.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		91BE26F5202C3FDA00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE26C5202C35F700123DF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91BE26EB202C3FDA00123DF3;
+			remoteInfo = ExtUploadUI;
+		};
+		91BE2709202C430700123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE26C5202C35F700123DF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91BE2701202C430700123DF3;
+			remoteInfo = ExtUpload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91BE26FB202C3FDA00123DF3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				91BE26F7202C3FDA00123DF3 /* ExtUploadUI.appex in Embed App Extensions */,
+				91BE270B202C430700123DF3 /* ExtUpload.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		564DCE0115CED942AA0570D4 /* Pods-ExtUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtUpload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExtUpload/Pods-ExtUpload.debug.xcconfig"; sourceTree = "<group>"; };
+		8956A05751DE002A17AEC8E6 /* Pods-ExtUpload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtUpload.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExtUpload/Pods-ExtUpload.release.xcconfig"; sourceTree = "<group>"; };
 		91BE26CD202C35F700123DF3 /* RPLiveStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPLiveStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BE26D0202C35F700123DF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BE26D1202C35F700123DF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +76,28 @@
 		91BE26DC202C35F700123DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91BE26DE202C35F700123DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91BE26DF202C35F700123DF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91BE26E6202C3CD100123DF3 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		91BE26EC202C3FDA00123DF3 /* ExtUploadUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExtUploadUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		91BE26EE202C3FDA00123DF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		91BE26F1202C3FDA00123DF3 /* BroadcastSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastSetupViewController.h; sourceTree = "<group>"; };
+		91BE26F2202C3FDA00123DF3 /* BroadcastSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastSetupViewController.m; sourceTree = "<group>"; };
+		91BE26F4202C3FDA00123DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91BE26FC202C410400123DF3 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		91BE2702202C430700123DF3 /* ExtUpload.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExtUpload.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		91BE2705202C430700123DF3 /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		91BE2706202C430700123DF3 /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		91BE2708202C430700123DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91BE278E202D4DE300123DF3 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		91BE2790202D4DE900123DF3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		91BE2792202D4DFF00123DF3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		91BE2794202D4E1000123DF3 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		91BE2796202D4E2400123DF3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		91BE2798202D7D7100123DF3 /* RPLiveStream.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RPLiveStream.entitlements; sourceTree = "<group>"; };
+		91BE2799202D7DA100123DF3 /* ExtUpload.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtUpload.entitlements; sourceTree = "<group>"; };
+		91BE279A202D81AA00123DF3 /* PAirSandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAirSandbox.h; sourceTree = "<group>"; };
+		91BE279B202D81AB00123DF3 /* PAirSandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAirSandbox.m; sourceTree = "<group>"; };
+		A60FB52FE4C39D912532BD19 /* libPods-RPLiveStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RPLiveStream.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A21C62E66B87F1DBA4A1A1 /* libPods-ExtUpload.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExtUpload.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +105,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BE26E7202C3CD200123DF3 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91BE26E9202C3FDA00123DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BE26ED202C3FDA00123DF3 /* ReplayKit.framework in Frameworks */,
+				91BE26EF202C3FDA00123DF3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91BE26FF202C430700123DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BE2797202D4E2400123DF3 /* Accelerate.framework in Frameworks */,
+				91BE2795202D4E1000123DF3 /* libresolv.tbd in Frameworks */,
+				91BE2793202D4DFF00123DF3 /* libz.tbd in Frameworks */,
+				91BE2791202D4DE900123DF3 /* libsqlite3.tbd in Frameworks */,
+				91BE278F202D4DE300123DF3 /* libstdc++.tbd in Frameworks */,
+				91BE2703202C430700123DF3 /* ReplayKit.framework in Frameworks */,
+				D765C140A04E270B41EF6AA7 /* libPods-ExtUpload.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B7333E42ABA2255500D2421 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91BE2796202D4E2400123DF3 /* Accelerate.framework */,
+				91BE2794202D4E1000123DF3 /* libresolv.tbd */,
+				91BE2792202D4DFF00123DF3 /* libz.tbd */,
+				91BE2790202D4DE900123DF3 /* libsqlite3.tbd */,
+				91BE278E202D4DE300123DF3 /* libstdc++.tbd */,
+				91BE26E6202C3CD100123DF3 /* ReplayKit.framework */,
+				A60FB52FE4C39D912532BD19 /* libPods-RPLiveStream.a */,
+				91BE26EE202C3FDA00123DF3 /* UIKit.framework */,
+				F0A21C62E66B87F1DBA4A1A1 /* libPods-ExtUpload.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		91BE26C4202C35F700123DF3 = {
 			isa = PBXGroup;
 			children = (
 				91BE26CF202C35F700123DF3 /* RPLiveStream */,
+				91BE26F0202C3FDA00123DF3 /* ExtUploadUI */,
+				91BE2704202C430700123DF3 /* ExtUpload */,
 				91BE26CE202C35F700123DF3 /* Products */,
+				BC72532B8AE36D411D104BCD /* Pods */,
+				6B7333E42ABA2255500D2421 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				91BE26CD202C35F700123DF3 /* RPLiveStream.app */,
+				91BE26EC202C3FDA00123DF3 /* ExtUploadUI.appex */,
+				91BE2702202C430700123DF3 /* ExtUpload.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +176,9 @@
 		91BE26CF202C35F700123DF3 /* RPLiveStream */ = {
 			isa = PBXGroup;
 			children = (
+				91BE279A202D81AA00123DF3 /* PAirSandbox.h */,
+				91BE279B202D81AB00123DF3 /* PAirSandbox.m */,
+				91BE2798202D7D7100123DF3 /* RPLiveStream.entitlements */,
 				91BE26D0202C35F700123DF3 /* AppDelegate.h */,
 				91BE26D1202C35F700123DF3 /* AppDelegate.m */,
 				91BE26D3202C35F700123DF3 /* ViewController.h */,
@@ -71,6 +192,37 @@
 			path = RPLiveStream;
 			sourceTree = "<group>";
 		};
+		91BE26F0202C3FDA00123DF3 /* ExtUploadUI */ = {
+			isa = PBXGroup;
+			children = (
+				91BE26F1202C3FDA00123DF3 /* BroadcastSetupViewController.h */,
+				91BE26F2202C3FDA00123DF3 /* BroadcastSetupViewController.m */,
+				91BE26F4202C3FDA00123DF3 /* Info.plist */,
+				91BE26FC202C410400123DF3 /* MainInterface.storyboard */,
+			);
+			path = ExtUploadUI;
+			sourceTree = "<group>";
+		};
+		91BE2704202C430700123DF3 /* ExtUpload */ = {
+			isa = PBXGroup;
+			children = (
+				91BE2799202D7DA100123DF3 /* ExtUpload.entitlements */,
+				91BE2705202C430700123DF3 /* SampleHandler.h */,
+				91BE2706202C430700123DF3 /* SampleHandler.m */,
+				91BE2708202C430700123DF3 /* Info.plist */,
+			);
+			path = ExtUpload;
+			sourceTree = "<group>";
+		};
+		BC72532B8AE36D411D104BCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				564DCE0115CED942AA0570D4 /* Pods-ExtUpload.debug.xcconfig */,
+				8956A05751DE002A17AEC8E6 /* Pods-ExtUpload.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,15 +233,54 @@
 				91BE26C9202C35F700123DF3 /* Sources */,
 				91BE26CA202C35F700123DF3 /* Frameworks */,
 				91BE26CB202C35F700123DF3 /* Resources */,
+				91BE26FB202C3FDA00123DF3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				91BE26F6202C3FDA00123DF3 /* PBXTargetDependency */,
+				91BE270A202C430700123DF3 /* PBXTargetDependency */,
 			);
 			name = RPLiveStream;
 			productName = RPLiveStream;
 			productReference = 91BE26CD202C35F700123DF3 /* RPLiveStream.app */;
 			productType = "com.apple.product-type.application";
+		};
+		91BE26EB202C3FDA00123DF3 /* ExtUploadUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91BE26FA202C3FDA00123DF3 /* Build configuration list for PBXNativeTarget "ExtUploadUI" */;
+			buildPhases = (
+				91BE26E8202C3FDA00123DF3 /* Sources */,
+				91BE26E9202C3FDA00123DF3 /* Frameworks */,
+				91BE26EA202C3FDA00123DF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtUploadUI;
+			productName = ExtUploadUI;
+			productReference = 91BE26EC202C3FDA00123DF3 /* ExtUploadUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		91BE2701202C430700123DF3 /* ExtUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91BE270C202C430700123DF3 /* Build configuration list for PBXNativeTarget "ExtUpload" */;
+			buildPhases = (
+				0C5DCBB0E0B9C174532E98F9 /* [CP] Check Pods Manifest.lock */,
+				91BE26FE202C430700123DF3 /* Sources */,
+				91BE26FF202C430700123DF3 /* Frameworks */,
+				91BE2700202C430700123DF3 /* Resources */,
+				40FDD49294C75CB800715F45 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtUpload;
+			productName = ExtUpload;
+			productReference = 91BE2702202C430700123DF3 /* ExtUpload.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -103,6 +294,24 @@
 					91BE26CC202C35F700123DF3 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					91BE26EB202C3FDA00123DF3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					91BE2701202C430700123DF3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -120,6 +329,8 @@
 			projectRoot = "";
 			targets = (
 				91BE26CC202C35F700123DF3 /* RPLiveStream */,
+				91BE26EB202C3FDA00123DF3 /* ExtUploadUI */,
+				91BE2701202C430700123DF3 /* ExtUpload */,
 			);
 		};
 /* End PBXProject section */
@@ -135,7 +346,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91BE26EA202C3FDA00123DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BE26FD202C410400123DF3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91BE2700202C430700123DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C5DCBB0E0B9C174532E98F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40FDD49294C75CB800715F45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExtUpload/Pods-ExtUpload-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91BE26C9202C35F700123DF3 /* Sources */ = {
@@ -145,10 +404,40 @@
 				91BE26D5202C35F700123DF3 /* ViewController.m in Sources */,
 				91BE26E0202C35F700123DF3 /* main.m in Sources */,
 				91BE26D2202C35F700123DF3 /* AppDelegate.m in Sources */,
+				91BE279C202D81AB00123DF3 /* PAirSandbox.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91BE26E8202C3FDA00123DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BE26F3202C3FDA00123DF3 /* BroadcastSetupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91BE26FE202C430700123DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BE2707202C430700123DF3 /* SampleHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91BE26F6202C3FDA00123DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91BE26EB202C3FDA00123DF3 /* ExtUploadUI */;
+			targetProxy = 91BE26F5202C3FDA00123DF3 /* PBXContainerItemProxy */;
+		};
+		91BE270A202C430700123DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91BE2701202C430700123DF3 /* ExtUpload */;
+			targetProxy = 91BE2709202C430700123DF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		91BE26D6202C35F700123DF3 /* Main.storyboard */ = {
@@ -278,8 +567,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RPLiveStream/RPLiveStream.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE8PS7F45A;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RPLiveStream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.liteav.RPLiveStream;
@@ -292,12 +583,88 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RPLiveStream/RPLiveStream.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE8PS7F45A;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RPLiveStream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.liteav.RPLiveStream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		91BE26F8202C3FDA00123DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QE8PS7F45A;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ExtUploadUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.liteav.RPLiveStream.ExtUploadUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		91BE26F9202C3FDA00123DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QE8PS7F45A;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ExtUploadUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.liteav.RPLiveStream.ExtUploadUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		91BE270D202C430700123DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 564DCE0115CED942AA0570D4 /* Pods-ExtUpload.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ExtUpload/ExtUpload.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QE8PS7F45A;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"${BUILT_PRODUCTS_DIR}/TXLiteAVSDK_Enterprise.framework/Headers",
+				);
+				INFOPLIST_FILE = ExtUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.liteav.RPLiveStream.ExtUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91BE270E202C430700123DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8956A05751DE002A17AEC8E6 /* Pods-ExtUpload.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ExtUpload/ExtUpload.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QE8PS7F45A;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"${BUILT_PRODUCTS_DIR}/TXLiteAVSDK_Enterprise.framework/Headers",
+				);
+				INFOPLIST_FILE = ExtUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.liteav.RPLiveStream.ExtUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -319,6 +686,24 @@
 			buildConfigurations = (
 				91BE26E4202C35F700123DF3 /* Debug */,
 				91BE26E5202C35F700123DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91BE26FA202C3FDA00123DF3 /* Build configuration list for PBXNativeTarget "ExtUploadUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91BE26F8202C3FDA00123DF3 /* Debug */,
+				91BE26F9202C3FDA00123DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91BE270C202C430700123DF3 /* Build configuration list for PBXNativeTarget "ExtUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91BE270D202C430700123DF3 /* Debug */,
+				91BE270E202C430700123DF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
