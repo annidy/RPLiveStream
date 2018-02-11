@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "PAirSandbox.h"
 
 @interface ViewController ()<RPBroadcastActivityViewControllerDelegate,RPBroadcastControllerDelegate>
 @property (nonatomic, weak) UIButton *liveBtn;
@@ -32,11 +31,6 @@
                                              selector:@selector(playerItemDidReachEnd:)
                                                  name:AVPlayerItemDidPlayToEndTimeNotification
                                                object:[self.soundPlayer currentItem]];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [[PAirSandbox sharedInstance] addAppGroup:@"group.com.tencent.liteav.RPLiveStream"];
-    [[PAirSandbox sharedInstance] enableSwipe];
 }
 
 - (void)playerItemDidReachEnd:(NSNotification *)notification {

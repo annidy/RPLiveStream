@@ -27,7 +27,6 @@
 		91BE2793202D4DFF00123DF3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE2792202D4DFF00123DF3 /* libz.tbd */; };
 		91BE2795202D4E1000123DF3 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE2794202D4E1000123DF3 /* libresolv.tbd */; };
 		91BE2797202D4E2400123DF3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE2796202D4E2400123DF3 /* Accelerate.framework */; };
-		91BE279C202D81AB00123DF3 /* PAirSandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BE279B202D81AB00123DF3 /* PAirSandbox.m */; };
 		D765C140A04E270B41EF6AA7 /* libPods-ExtUpload.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A21C62E66B87F1DBA4A1A1 /* libPods-ExtUpload.a */; };
 /* End PBXBuildFile section */
 
@@ -92,10 +91,6 @@
 		91BE2792202D4DFF00123DF3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		91BE2794202D4E1000123DF3 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		91BE2796202D4E2400123DF3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		91BE2798202D7D7100123DF3 /* RPLiveStream.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RPLiveStream.entitlements; sourceTree = "<group>"; };
-		91BE2799202D7DA100123DF3 /* ExtUpload.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtUpload.entitlements; sourceTree = "<group>"; };
-		91BE279A202D81AA00123DF3 /* PAirSandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAirSandbox.h; sourceTree = "<group>"; };
-		91BE279B202D81AB00123DF3 /* PAirSandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAirSandbox.m; sourceTree = "<group>"; };
 		A60FB52FE4C39D912532BD19 /* libPods-RPLiveStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RPLiveStream.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A21C62E66B87F1DBA4A1A1 /* libPods-ExtUpload.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExtUpload.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -176,9 +171,6 @@
 		91BE26CF202C35F700123DF3 /* RPLiveStream */ = {
 			isa = PBXGroup;
 			children = (
-				91BE279A202D81AA00123DF3 /* PAirSandbox.h */,
-				91BE279B202D81AB00123DF3 /* PAirSandbox.m */,
-				91BE2798202D7D7100123DF3 /* RPLiveStream.entitlements */,
 				91BE26D0202C35F700123DF3 /* AppDelegate.h */,
 				91BE26D1202C35F700123DF3 /* AppDelegate.m */,
 				91BE26D3202C35F700123DF3 /* ViewController.h */,
@@ -206,7 +198,6 @@
 		91BE2704202C430700123DF3 /* ExtUpload */ = {
 			isa = PBXGroup;
 			children = (
-				91BE2799202D7DA100123DF3 /* ExtUpload.entitlements */,
 				91BE2705202C430700123DF3 /* SampleHandler.h */,
 				91BE2706202C430700123DF3 /* SampleHandler.m */,
 				91BE2708202C430700123DF3 /* Info.plist */,
@@ -296,7 +287,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -309,7 +300,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -404,7 +395,6 @@
 				91BE26D5202C35F700123DF3 /* ViewController.m in Sources */,
 				91BE26E0202C35F700123DF3 /* main.m in Sources */,
 				91BE26D2202C35F700123DF3 /* AppDelegate.m in Sources */,
-				91BE279C202D81AB00123DF3 /* PAirSandbox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +557,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RPLiveStream/RPLiveStream.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE8PS7F45A;
 				ENABLE_BITCODE = NO;
@@ -583,7 +572,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RPLiveStream/RPLiveStream.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE8PS7F45A;
 				ENABLE_BITCODE = NO;
@@ -629,7 +617,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 564DCE0115CED942AA0570D4 /* Pods-ExtUpload.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = ExtUpload/ExtUpload.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE8PS7F45A;
 				ENABLE_BITCODE = NO;
@@ -651,7 +638,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8956A05751DE002A17AEC8E6 /* Pods-ExtUpload.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = ExtUpload/ExtUpload.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE8PS7F45A;
 				ENABLE_BITCODE = NO;

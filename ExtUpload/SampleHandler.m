@@ -98,12 +98,6 @@ void MyLog(NSString *formatString, ...) {
     }
     s_headPhoneIn = NO;
     s_isMicEnable = Mic_Unknown;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if (s_isMicEnable == Mic_Unknown) {
-            s_isMicEnable = Mic_Disable;
-            NSLog(@"s_isMicEnable = Mic_Disable");
-        }
-    });
 }
 
 - (void) initRtmp {
@@ -228,6 +222,14 @@ void MyLog(NSString *formatString, ...) {
                     //                    CMTime  duration = CMSampleBufferGetDuration(sampleBuffer);
                     NNSLog(10, @"Audio");
                 }
+            }
+            if (s_isMicEnable == Mic_Unknown) {
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    if (s_isMicEnable == Mic_Unknown) {
+                        s_isMicEnable = Mic_Disable;
+                        NSLog(@"s_isMicEnable = Mic_Disable");
+                    }
+                });
             }
             break;
         case RPSampleBufferTypeAudioMic:
