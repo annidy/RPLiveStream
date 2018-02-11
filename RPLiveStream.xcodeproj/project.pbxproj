@@ -28,6 +28,7 @@
 		91BE2795202D4E1000123DF3 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE2794202D4E1000123DF3 /* libresolv.tbd */; };
 		91BE2797202D4E2400123DF3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE2796202D4E2400123DF3 /* Accelerate.framework */; };
 		91BE279C202D81AB00123DF3 /* PAirSandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BE279B202D81AB00123DF3 /* PAirSandbox.m */; };
+		91BE27D2202DB8AA00123DF3 /* TXLiteAVSDK_Professional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE27BD202DB88D00123DF3 /* TXLiteAVSDK_Professional.framework */; };
 		D765C140A04E270B41EF6AA7 /* libPods-ExtUpload.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A21C62E66B87F1DBA4A1A1 /* libPods-ExtUpload.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,97 @@
 			proxyType = 1;
 			remoteGlobalIDString = 91BE2701202C430700123DF3;
 			remoteInfo = ExtUpload;
+		};
+		91BE27BA202DB88D00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40F007311F4C372A0040C1C1;
+			remoteInfo = TXLiteAVSDK_Enterprise;
+		};
+		91BE27BC202DB88D00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40407FA71F316B03006C7301;
+			remoteInfo = TXLiteAVSDK_Professional;
+		};
+		91BE27BE202DB88D00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 405653371F18AA050030257E;
+			remoteInfo = TXLiteAVSDK_Push_Upgrade;
+		};
+		91BE27C0202DB88D00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40407FFC1F317514006C7301;
+			remoteInfo = TXLiteAVSDK_Push_Standard;
+		};
+		91BE27C2202DB88D00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 405652891F18A9900030257E;
+			remoteInfo = TXLiteAVSDK_Smart;
+		};
+		91BE27C4202DB88D00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 405653E51F18AA0F0030257E;
+			remoteInfo = TXLiteAVSDK_Player;
+		};
+		91BE27C6202DB88D00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40E8D2E51F332B4B0097F311;
+			remoteInfo = TXLiteAVSDK_UGC;
+		};
+		91BE27C8202DB88D00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40F007D71F4C38220040C1C1;
+			remoteInfo = TXLiteAVSDK_AVRoom_Upgrade;
+		};
+		91BE27CA202DB88D00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40091D521F4FC209009B882D;
+			remoteInfo = TXLiteAVSDK_AVRoom_Standard;
+		};
+		91BE27CC202DB88D00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F17DE32B2006FF6D00469B28;
+			remoteInfo = TXLiteAVSDK_Smart_No_VOD;
+		};
+		91BE27CE202DB88D00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 91A06E3E20084C6500E25032;
+			remoteInfo = TXLiteAVSDK_LivePlay;
+		};
+		91BE27D0202DB8A100123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 40407F151F316B03006C7301;
+			remoteInfo = TXLiteAVSDK_Professional;
+		};
+		91BE27D3202DB8DD00123DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 40407F151F316B03006C7301;
+			remoteInfo = TXLiteAVSDK_Professional;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -96,6 +188,7 @@
 		91BE2799202D7DA100123DF3 /* ExtUpload.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtUpload.entitlements; sourceTree = "<group>"; };
 		91BE279A202D81AA00123DF3 /* PAirSandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAirSandbox.h; sourceTree = "<group>"; };
 		91BE279B202D81AB00123DF3 /* PAirSandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAirSandbox.m; sourceTree = "<group>"; };
+		91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TXLiteAVSDK.xcodeproj; path = "../../liteav-trunk/liteav/project/ios/sdk/liteav/TXLiteAVSDK.xcodeproj"; sourceTree = "<group>"; };
 		A60FB52FE4C39D912532BD19 /* libPods-RPLiveStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RPLiveStream.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A21C62E66B87F1DBA4A1A1 /* libPods-ExtUpload.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExtUpload.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -122,6 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BE27D2202DB8AA00123DF3 /* TXLiteAVSDK_Professional.framework in Frameworks */,
 				91BE2797202D4E2400123DF3 /* Accelerate.framework in Frameworks */,
 				91BE2795202D4E1000123DF3 /* libresolv.tbd in Frameworks */,
 				91BE2793202D4DFF00123DF3 /* libz.tbd in Frameworks */,
@@ -154,6 +248,7 @@
 		91BE26C4202C35F700123DF3 = {
 			isa = PBXGroup;
 			children = (
+				91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */,
 				91BE26CF202C35F700123DF3 /* RPLiveStream */,
 				91BE26F0202C3FDA00123DF3 /* ExtUploadUI */,
 				91BE2704202C430700123DF3 /* ExtUpload */,
@@ -214,6 +309,24 @@
 			path = ExtUpload;
 			sourceTree = "<group>";
 		};
+		91BE27AD202DB88C00123DF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91BE27BB202DB88D00123DF3 /* TXLiteAVSDK_Enterprise.framework */,
+				91BE27BD202DB88D00123DF3 /* TXLiteAVSDK_Professional.framework */,
+				91BE27BF202DB88D00123DF3 /* TXLiteAVSDK_Push_Upgrade.framework */,
+				91BE27C1202DB88D00123DF3 /* TXLiteAVSDK_Push_Standard.framework */,
+				91BE27C3202DB88D00123DF3 /* TXLiteAVSDK_Smart.framework */,
+				91BE27C5202DB88D00123DF3 /* TXLiteAVSDK_Player.framework */,
+				91BE27C7202DB88D00123DF3 /* TXLiteAVSDK_UGC.framework */,
+				91BE27C9202DB88D00123DF3 /* TXLiteAVSDK_AVRoom_Upgrade.framework */,
+				91BE27CB202DB88D00123DF3 /* TXLiteAVSDK_AVRoom_Standard.framework */,
+				91BE27CD202DB88D00123DF3 /* TXLiteAVSDK_Smart_No_VOD.framework */,
+				91BE27CF202DB88D00123DF3 /* TXLiteAVSDK_LivePlay.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BC72532B8AE36D411D104BCD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +351,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				91BE27D4202DB8DD00123DF3 /* PBXTargetDependency */,
 				91BE26F6202C3FDA00123DF3 /* PBXTargetDependency */,
 				91BE270A202C430700123DF3 /* PBXTargetDependency */,
 			);
@@ -276,6 +390,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				91BE27D1202DB8A100123DF3 /* PBXTargetDependency */,
 			);
 			name = ExtUpload;
 			productName = ExtUpload;
@@ -326,6 +441,12 @@
 			mainGroup = 91BE26C4202C35F700123DF3;
 			productRefGroup = 91BE26CE202C35F700123DF3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 91BE27AD202DB88C00123DF3 /* Products */;
+					ProjectRef = 91BE27AC202DB88C00123DF3 /* TXLiteAVSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				91BE26CC202C35F700123DF3 /* RPLiveStream */,
@@ -334,6 +455,86 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		91BE27BB202DB88D00123DF3 /* TXLiteAVSDK_Enterprise.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TXLiteAVSDK_Enterprise.framework;
+			remoteRef = 91BE27BA202DB88D00123DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91BE27BD202DB88D00123DF3 /* TXLiteAVSDK_Professional.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TXLiteAVSDK_Professional.framework;
+			remoteRef = 91BE27BC202DB88D00123DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91BE27BF202DB88D00123DF3 /* TXLiteAVSDK_Push_Upgrade.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TXLiteAVSDK_Push_Upgrade.framework;
+			remoteRef = 91BE27BE202DB88D00123DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91BE27C1202DB88D00123DF3 /* TXLiteAVSDK_Push_Standard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TXLiteAVSDK_Push_Standard.framework;
+			remoteRef = 91BE27C0202DB88D00123DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91BE27C3202DB88D00123DF3 /* TXLiteAVSDK_Smart.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TXLiteAVSDK_Smart.framework;
+			remoteRef = 91BE27C2202DB88D00123DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91BE27C5202DB88D00123DF3 /* TXLiteAVSDK_Player.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TXLiteAVSDK_Player.framework;
+			remoteRef = 91BE27C4202DB88D00123DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91BE27C7202DB88D00123DF3 /* TXLiteAVSDK_UGC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TXLiteAVSDK_UGC.framework;
+			remoteRef = 91BE27C6202DB88D00123DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91BE27C9202DB88D00123DF3 /* TXLiteAVSDK_AVRoom_Upgrade.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TXLiteAVSDK_AVRoom_Upgrade.framework;
+			remoteRef = 91BE27C8202DB88D00123DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91BE27CB202DB88D00123DF3 /* TXLiteAVSDK_AVRoom_Standard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TXLiteAVSDK_AVRoom_Standard.framework;
+			remoteRef = 91BE27CA202DB88D00123DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91BE27CD202DB88D00123DF3 /* TXLiteAVSDK_Smart_No_VOD.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TXLiteAVSDK_Smart_No_VOD.framework;
+			remoteRef = 91BE27CC202DB88D00123DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91BE27CF202DB88D00123DF3 /* TXLiteAVSDK_LivePlay.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TXLiteAVSDK_LivePlay.framework;
+			remoteRef = 91BE27CE202DB88D00123DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		91BE26CB202C35F700123DF3 /* Resources */ = {
@@ -436,6 +637,16 @@
 			isa = PBXTargetDependency;
 			target = 91BE2701202C430700123DF3 /* ExtUpload */;
 			targetProxy = 91BE2709202C430700123DF3 /* PBXContainerItemProxy */;
+		};
+		91BE27D1202DB8A100123DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TXLiteAVSDK_Professional;
+			targetProxy = 91BE27D0202DB8A100123DF3 /* PBXContainerItemProxy */;
+		};
+		91BE27D4202DB8DD00123DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TXLiteAVSDK_Professional;
+			targetProxy = 91BE27D3202DB8DD00123DF3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

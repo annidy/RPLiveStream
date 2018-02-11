@@ -28,6 +28,9 @@ static NSString *s_userid, *s_groupid;
 static id s_lastVideoSampleBuffer;
 static SampleHandler *s_delegate;   // retain delegate
 
+static NSFileHandle *s_appAudio;
+static NSFileHandle *s_micAudio;
+
 static BOOL s_headPhoneIn;
 typedef enum : NSUInteger {
     Mic_Unknown,
@@ -98,12 +101,6 @@ void MyLog(NSString *formatString, ...) {
     }
     s_headPhoneIn = NO;
     s_isMicEnable = Mic_Unknown;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if (s_isMicEnable == Mic_Unknown) {
-            s_isMicEnable = Mic_Disable;
-            NSLog(@"s_isMicEnable = Mic_Disable");
-        }
-    });
 }
 
 - (void) initRtmp {
@@ -135,6 +132,17 @@ void MyLog(NSString *formatString, ...) {
     s_txLivePublisher.delegate = s_delegate;
     [TXLiveBase sharedInstance].delegate = s_delegate;
     [self checkHeadphone];
+    
+    NSURL *groupURL = [[NSFileManager defaultManager]
+                       containerURLForSecurityApplicationGroupIdentifier:
+                       @"group.com.tencent.liteav.RPLiveStream"];
+    NSString *groupDir = [groupURL relativePath];
+    NSString *micPcm = [groupDir stringByAppendingPathComponent:@"mic.pcm"];
+    NSString *appPcm = [groupDir stringByAppendingPathComponent:@"app.pcm"];
+    [[NSFileManager defaultManager] createFileAtPath:micPcm contents:nil attributes:nil];
+    [[NSFileManager defaultManager] createFileAtPath:appPcm contents:nil attributes:nil];
+    s_micAudio = [NSFileHandle fileHandleForWritingAtPath:micPcm];
+    s_appAudio = [NSFileHandle fileHandleForWritingAtPath:appPcm];
 }
 
 - (void)broadcastStartedWithSetupInfo:(NSDictionary<NSString *,NSObject *> *)setupInfo {
@@ -204,6 +212,12 @@ void MyLog(NSString *formatString, ...) {
 
 - (void)processSampleBuffer:(CMSampleBufferRef)sampleBuffer withType:(RPSampleBufferType)sampleBufferType {
     
+    if (sampleBufferType == RPSampleBufferTypeAudioApp) {
+        [self dumpAudioData:sampleBuffer fileHandle:s_appAudio];
+    } else if (sampleBufferType == RPSampleBufferTypeAudioMic) {
+        [self dumpAudioData:sampleBuffer fileHandle:s_micAudio];
+    }
+    
     if (s_txLivePublisher == nil) {
         return;
     }
@@ -228,6 +242,14 @@ void MyLog(NSString *formatString, ...) {
                     //                    CMTime  duration = CMSampleBufferGetDuration(sampleBuffer);
                     NNSLog(10, @"Audio");
                 }
+            }
+            if (s_isMicEnable == Mic_Unknown) {
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    if (s_isMicEnable == Mic_Unknown) {
+                        s_isMicEnable = Mic_Disable;
+                        NSLog(@"s_isMicEnable = Mic_Disable");
+                    }
+                });
             }
             break;
         case RPSampleBufferTypeAudioMic:
@@ -268,5 +290,26 @@ void MyLog(NSString *formatString, ...) {
     
 }
 
+- (void)dumpAudioData:(CMSampleBufferRef)sampleBuffer fileHandle:(NSFileHandle *)fileHandle {
+    
+    AudioBufferList  audioBufferList;
+    CMBlockBufferRef blockBuffer;
+    
+    static int dpsize = 0;
+    
+    CMSampleBufferGetAudioBufferListWithRetainedBlockBuffer(sampleBuffer, NULL, &audioBufferList, sizeof(audioBufferList), NULL, NULL, 0, &blockBuffer);
+    
+    for( int y=0; y<audioBufferList.mNumberBuffers; y++ )
+    {
+        AudioBuffer audioBuffer = audioBufferList.mBuffers[y];
+        NSData *data = [NSData dataWithBytes:audioBuffer.mData length:audioBuffer.mDataByteSize];
+        [fileHandle writeData:data];
+        dpsize += audioBuffer.mDataByteSize;
+    }
+    
+    CFRelease(blockBuffer);
+    
+    NNSLog(10, @"dumpAudioData %d",dpsize);
+}
 @end
 
